@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f7f8;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #f1c40f;
+  padding: 10px;
+  color: #282936;
+}
+
+.btn-div {
+  float: right;
+  margin-right: 15px;
+}
+
+.btn-div button {
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #282936;
+  font-weight: 600;
+  background-color: #f1c40f;
+  transition: ease 0.5s;
+}
+.btn-div button:hover {
+  background-color: #d3a900;
+  color: #ffff;
+}
+
+#notes-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.note {
+  width: 280px;
+  height: 150px;
+  margin: 20px;
+  border: 2px solid #dfdede;
+  border-radius: 5px;
+  background-color: #ffff;
+}
+
+.operation {
+  float: right;
+  margin-right: 5px;
+}
+
+.operation button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.fa-pen-to-square,
+.fa-trash {
+  color: #ffff;
+  padding: 10px;
+  background-color: #07be53;
+  border-radius: 50%;
+}
+
+.fa-trash {
+  background-color: #e74c3c;
+}
+
+.fa-pen-to-square:hover {
+  background-color: #ffff;
+  color: #07be53;
+}
+
+.fa-trash:hover {
+  color: #e74c3c;
+  background-color: #ffff;
+  height: 100%;
+}
+
+.main {
+  width: 260px;
+  height: 103px;
+  padding: 5px 10px;
+  overflow-y: scroll;
+}
+
+.main pre {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  width: 93%;
+  height: 62%;
+  border: none;
+  resize: none;
+  font-size: 17px;
+  padding: 10px;
+  overflow-y: scroll;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
